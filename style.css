@@ -1,0 +1,166 @@
+/* BASIC RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    background: rgba(52, 19, 199, 0.781);
+    backdrop-filter: blur(10px);
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar a {
+    color: rgba(15, 1, 1, 0.89);
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #e6f1f1;
+}
+
+/* PARALLAX HERO */
+.hero {
+    background: url('https://images.unsplash.com/photo-1494976388531-d1058494cdd8?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2FyfGVufDB8fDB8fHww') center/cover fixed;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(216, 231, 243);
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    text-shadow: 0 0 20px rgb(99, 206, 12);
+}
+
+.btn-glow {
+    margin-top: 20px;
+    padding: 12px 10px;
+    background: linear-gradient(90deg, #094b17, #00fff2);
+    border-radius: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+    font-weight: bold;
+}
+
+.btn-glow:hover {
+    box-shadow: 0 0 20px rgb(255, 0, 43);
+    transform: scale(1.05);
+}
+
+/* SECTION TITLE */
+.section-title {
+    padding-top: 50px;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* CAR GRID */
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 40px;
+}
+
+.car-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.realistic {
+    background: #161616;
+    padding: 15px;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.realistic:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(255, 0, 70, 0.4);
+}
+
+/* BUY BUTTON */
+.btn-buy {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    background: #3700ff;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-buy:hover {
+    background: #3eff25;
+    transform: scale(1.05);
+}
+
+/* GLASS CONTACT FORM */
+.glass {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    width: 400px;
+    margin: auto;
+    border-radius: 20px;
+    color: pink;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* CONTACT CONTAINER */
+.contact-container {
+    background: url('https://cdn-s3.autocarindia.com/BMW/ix3/P90615613_highRes_the-new-bmw-ix3-50-x.jpg?w=640&q=75') center/cover fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* INPUTS */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+/* FADE-UP ANIMATION */
+.fade-up {
+    animation: fadeUp 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    text-align: center;
+    color: #bbb;
+    padding: 20px;
+    margin-top: 40px;
+}
